@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:GroupBox>
+        <ui:GroupBox style="margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; justify-content: center; flex-direction: row; align-items: stretch; width: auto;">
+            <ui:Label text="Above" display-tooltip-when-elided="true" />
+            <ui:Toggle value="false" binding-path="m_above" name="Up" style="align-items: center; flex-direction: row; justify-content: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Left" style="flex-direction: row; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center;">
+            <ui:Label text="  Left" display-tooltip-when-elided="true" />
+            <ui:Toggle value="false" binding-path="m_left" name="Left" style="align-items: stretch; justify-content: space-between; flex-direction: row;" />
+            <ui:Toggle value="false" binding-path="m_inFront" name="Infront" style="align-items: center;" />
+            <ui:Toggle value="false" binding-path="m_behind" name="Behind" style="align-items: center;" />
+            <ui:Toggle value="false" binding-path="m_right" name="Right" text="Right" style="align-items: center;" />
+        </ui:GroupBox>
+        <ui:GroupBox style="margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-direction: row; align-items: center; justify-content: center; width: auto;">
+            <ui:Label text="Below" display-tooltip-when-elided="true" />
+            <ui:Toggle value="false" binding-path="m_below" name="Down" usage-hints="None" tabindex="0" style="align-items: center; justify-content: flex-start; flex-direction: row; -unity-text-align: upper-left; transform-origin: center; -unity-background-scale-mode: stretch-to-fill;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>
