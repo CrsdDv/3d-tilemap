@@ -57,6 +57,11 @@ public class TilingRule : ScriptableObject
                     }
             }
 
+            if (neighborState != -1 && !isRule)
+            {
+                return false;
+            }
+
             rulesMetCount += isRule ? 1 : 0;
         }
 

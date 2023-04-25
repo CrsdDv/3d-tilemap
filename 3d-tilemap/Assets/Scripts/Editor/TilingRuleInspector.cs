@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
-[CustomEditor(typeof(TilingRule))]
+//[CustomEditor(typeof(TilingRule))]
 public class TilingRuleInspector : Editor
 {
     public VisualTreeAsset m_InspectorXML;

@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b68197efb6e69e4e8ad6d168ab84a1e, type: 3}
   m_Name: new Tile data
   m_EditorClassIdentifier: 
-  defaultTile: {fileID: 7460565953513640386, guid: b8b9418fa69121d45bfff46baf17871a, type: 3}
-  tiles: []
+  defaultTile: {fileID: 4588351272768307431, guid: 86cbd269ce8f7924aa5ebc1824fa35bb, type: 3}
+  tiles:
+  - prefab: {fileID: 4588351272768307431, guid: 2537fadd9f1832c4285c38cd3e88d4ee, type: 3}
+    rule: {fileID: 11400000, guid: da15b96d4985ed246a2d8b3b9b19864c, type: 2}
+  - prefab: {fileID: 4588351272768307431, guid: 16059fe74bff76547b03284ed3877f56, type: 3}
+    rule: {fileID: 11400000, guid: 2b7c885f7edd217459e4a15070cdccaa, type: 2}
+  - prefab: {fileID: 4588351272768307431, guid: 198b7d8ddac31444b8d542e0b97b6926, type: 3}
+    rule: {fileID: 11400000, guid: 201e2a6d82382654d854863e1d2b2d28, type: 2}
+  - prefab: {fileID: 4588351272768307431, guid: 79ad51869a8010b4182ec78c753e6a07, type: 3}
+    rule: {fileID: 11400000, guid: adfd224f07ca41f4ba369e90d0a944f9, type: 2}
+  - prefab: {fileID: 4588351272768307431, guid: 8cfb105b2d145a54a8890b7376b1c537, type: 3}
+    rule: {fileID: 11400000, guid: 30d2d960e0c752d47a3c9c91419f5f52, type: 2}
+  - prefab: {fileID: 4588351272768307431, guid: 03485ce60d31c7e409fb1c8348c2347a, type: 3}
+    rule: {fileID: 11400000, guid: ddb1a216e1bafb84ab50c57c4c447a89, type: 2}

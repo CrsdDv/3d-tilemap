@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b68197efb6e69e4e8ad6d168ab84a1e, type: 3}
-  m_Name: new Tile data 1
+  m_Script: {fileID: 11500000, guid: 8fb18d9898e8198418091e6ea3e62ea4, type: 3}
+  m_Name: InFront
   m_EditorClassIdentifier: 
-  defaultTile: {fileID: 0}
-  tiles: []
+  m_left: 0
+  m_above: 0
+  m_below: 0
+  m_inFront: 1
+  m_behind: 0
+  m_right: 0

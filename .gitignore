@@ -10,6 +10,9 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
+# TMP_Pro Assets
+3d-tilemap/Assets/TextMesh Pro*
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 ![Aa]ssets/**/*.meta
 
@@ -59,3 +62,4 @@ sysinfo.txt
 crashlytics-build.properties
 
 3d-tilemap/.vsconfig
+3d-tilemap/Assets/TextMesh Pro/Sprites/EmojiOne.png.meta

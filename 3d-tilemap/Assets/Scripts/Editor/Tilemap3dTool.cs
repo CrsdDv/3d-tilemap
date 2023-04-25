@@ -65,9 +65,18 @@ public class Tilemap3dTool : EditorTool, IDrawSelectedHandles
 
         foreach (var item in targetTilemap.GridNotes)
         {
-            Handles.color = Color.green;
-
             Vector3Int gridPos = item.GridPosition;
+
+            Handles.color = Color.red;
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.Greater;
+            if (Handles.Button(gridPos * targetTilemap.GridSize, Quaternion.identity, 0.25f, 0.25f, Handles.CubeHandleCap))
+            {
+                targetTilemap.RemoveGridNote(gridPos);
+                break;
+            }
+
+            Handles.color = Color.green;
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
 
             Vector3Int upPosition = gridPos + Vector3Int.up;
             Vector3Int downPosition = gridPos + Vector3Int.down;
@@ -104,13 +113,6 @@ public class Tilemap3dTool : EditorTool, IDrawSelectedHandles
             if (DrawButton(backPosition))
             {
                 targetTilemap.AddGridNote(backPosition, data);
-                break;
-            }
-
-            Handles.color = Color.red;
-            if (Handles.Button(gridPos * targetTilemap.GridSize, Quaternion.identity, 0.25f, 0.25f, Handles.CubeHandleCap))
-            {
-                targetTilemap.RemoveGridNote(gridPos);
                 break;
             }
         }

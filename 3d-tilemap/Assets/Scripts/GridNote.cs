@@ -25,9 +25,7 @@ public class GridNote
 
         if (prefab != currentPrefab)
         {
-            Debug.Log(prefab.GetInstanceID());
             currentPrefab = prefab;
-
 
             if (instance != null)
             {

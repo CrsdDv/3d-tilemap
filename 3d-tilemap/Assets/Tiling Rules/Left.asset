@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fb18d9898e8198418091e6ea3e62ea4, type: 3}
-  m_Name: new Tiling rule
+  m_Name: Left
   m_EditorClassIdentifier: 
-  neighbors: 
-  m_left: 0
+  m_left: 1
+  m_above: 0
+  m_below: 0
+  m_inFront: 0
+  m_behind: 0
+  m_right: 0
