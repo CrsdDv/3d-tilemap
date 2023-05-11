@@ -7,8 +7,10 @@ public class GridNote
 {
     [SerializeField] private Vector3Int gridPosition;
     [SerializeField] private TileData tile;
-    private GameObject currentPrefab;
-    private GameObject instance;
+    [HideInInspector]
+    [SerializeField] private GameObject currentPrefab;
+    [HideInInspector]
+    [SerializeField] private GameObject instance;
 
     public Vector3Int GridPosition { get => gridPosition; set => gridPosition = value; }
     public TileData Tile { get => tile; set => tile = value; }

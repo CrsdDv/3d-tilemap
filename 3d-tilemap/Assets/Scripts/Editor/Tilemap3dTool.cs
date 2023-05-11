@@ -29,7 +29,7 @@ public class Tilemap3dTool : EditorTool, IDrawSelectedHandles
     {
         get
         {
-            return new GUIContent(AssetDatabase.LoadAssetAtPath<Texture2D>("Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/VariablesSaver@32x.png"),
+            return new GUIContent(AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/tilemap_3d_icon.png"),
                 "Tilemap 3d Tool");
         }
     }
@@ -66,14 +66,6 @@ public class Tilemap3dTool : EditorTool, IDrawSelectedHandles
         foreach (var item in targetTilemap.GridNotes)
         {
             Vector3Int gridPos = item.GridPosition;
-
-            Handles.color = Color.red;
-            Handles.zTest = UnityEngine.Rendering.CompareFunction.Greater;
-            if (Handles.Button(gridPos * targetTilemap.GridSize, Quaternion.identity, 0.25f, 0.25f, Handles.CubeHandleCap))
-            {
-                targetTilemap.RemoveGridNote(gridPos);
-                break;
-            }
 
             Handles.color = Color.green;
             Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
@@ -113,6 +105,18 @@ public class Tilemap3dTool : EditorTool, IDrawSelectedHandles
             if (DrawButton(backPosition))
             {
                 targetTilemap.AddGridNote(backPosition, data);
+                break;
+            }
+        }
+        foreach (var item in targetTilemap.GridNotes)
+        {
+            Vector3Int gridPos = item.GridPosition;
+
+            Handles.color = Color.red;
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.Always;
+            if (Handles.Button(gridPos * targetTilemap.GridSize, Quaternion.identity, 0.25f, 0.25f, Handles.CubeHandleCap))
+            {
+                targetTilemap.RemoveGridNote(gridPos);
                 break;
             }
         }
